@@ -5,6 +5,6 @@ to Google Earth Engine.
 
 Any contribution is highly appreciated.
 
-*I'll add details of the code.*
+*I'll add the details of the code.*
 
 [The GEE Link](https://code.earthengine.google.com/9cf8a0cdb9fb59b001f24c03ffba04b9)
