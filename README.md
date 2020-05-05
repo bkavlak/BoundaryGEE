@@ -1,6 +1,6 @@
 # BoundaryGEE
 
-This is an attempt to translate raster processes of this great open-source article [Reference Article](https://ieeexplore.ieee.org/document/8584043)
+This is an attempt to translate raster processes of this great open-source [Reference Article](https://ieeexplore.ieee.org/document/8584043)
 to Google Earth Engine.
 
 * I'll add details of the code *
