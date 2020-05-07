@@ -7,6 +7,6 @@ Any contribution is highly appreciated.
 
 *I'll add the details of the code.*
 
-[The GEE Link](https://code.earthengine.google.com/9cf8a0cdb9fb59b001f24c03ffba04b9)
+Click here: [GEE Link](https://code.earthengine.google.com/9cf8a0cdb9fb59b001f24c03ffba04b9)
 
-Click ```Run``` and see the preliminary results.
+Then click ```Run``` to see the preliminary results.
