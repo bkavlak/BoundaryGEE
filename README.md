@@ -13,7 +13,7 @@ Then click ```Run``` to see the preliminary results.
 
 **Example Raster Output: (PRELIMINARY!)**
 
-<img src="images/RasterOutput1.png" width="500" height="500">
+<div align="center"><img src="images/RasterOutput1.png" width="500" height="500" ></div>
 
 ## Improvement Areas
 -	By adjusting **T** parameter, you can eliminate some noise (at Line 24)
