@@ -20,7 +20,7 @@ Then click ```Run``` to see the preliminary results.
 -	You can play with round standard deviation kernel (5x5 circle convolution right now.)
 
 ## Post-Processing
-I cannot explain better than the authors of the article on page 241. I tried steps in QGIS-GRASS except step 7 (the authors use ArcGIS for this step. There should be an option in GRASS, but I took several errors.) **Pay particular attention to the output of each step.** I got some errors since one of the steps add an extra column to the meta-data. That error took one day to solve!
+I cannot explain better than the authors of the article on page 241. I tried steps in QGIS-GRASS except step 7 (the authors use ArcGIS for this step. There should be an option in GRASS, but I took several errors.) **Pay particular attention to the output of each step!** I got some errors since one of the steps add an extra column to the meta-data. That error took one day to solve!
 
 I attached an attempt as ScreenShots below. Small circles at the second SS prevented us from extending lines.
 
