@@ -11,6 +11,10 @@ Click here: [GEE Link](https://code.earthengine.google.com/ae75cc14bb65a7217e138
 
 Then click ```Run``` to see the preliminary results.
 
+**Example Raster Output: (PRELIMINARY!)**
+
+![](images/RasterOutput1.png)
+
 ## Improvement Areas
 -	By adjusting T parameter, you can eliminate some noise (at Line 24)
 -	Connected Component analysis could be improved to eliminate extra lines within the fields.
@@ -24,4 +28,8 @@ I cannot explain better than the authors of the article on page 241. I tried ste
 
 I attached an attempt as ScreenShots below. Small circles at the second SS prevented us from extending lines.
 
+**Example Vector Outputs: (PRELIMINARY!)**
 
+Vector Output              |  Vector Output (Zoomed in)
+:-------------------------:|:-------------------------:
+![](images/VectorOutput1.png)  |  ![](images/VectorOutput2.png)
