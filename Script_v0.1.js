@@ -49,10 +49,12 @@ var sentinelCollection = ee.ImageCollection("COPERNICUS/S2_SR"),
 Map.centerObject(tRegion);
 
 // Threshold
-var T = ee.Number(100); //this is pixel value
-var CT = ee.Number(200); //this is m2
-var ec = true;
-var ConnectedComponents = false;
+var T = ee.Number(100);  //this is pixel value
+
+// ConnectedComponents Parameters
+var ec = true;                   //eightConnected
+var CT = ee.Number(200);         //this is m2
+var ConnectedComponents = false; //better leave it false right now
 
 // GET MONTHLY MEAN IMAGES
 {
@@ -60,7 +62,7 @@ var ConnectedComponents = false;
 // FEBRUARY
 var sentinelFeb = ee.ImageCollection(sentinelCollection
   .filterBounds(tRegion)
-  .filterDate('2019-02-01', '2019-02-28')
+  .filterDate('2019-02-01', '2019-03-01')
   .select(['B8','B11','B12']))
   .filter(ee.Filter.lte('CLOUDY_PIXEL_PERCENTAGE', 20));
 
@@ -69,7 +71,7 @@ var FebMean = sentinelFeb.reduce(ee.Reducer.mean());
 // MARCH
 var sentinelMarch = ee.ImageCollection(sentinelCollection
   .filterBounds(tRegion)
-  .filterDate('2019-03-01', '2019-03-31')
+  .filterDate('2019-03-01', '2019-04-01')
   .select(['B8','B11','B12']))
   .filter(ee.Filter.lte('CLOUDY_PIXEL_PERCENTAGE', 20));
 
@@ -78,7 +80,7 @@ var MarchMean = sentinelMarch.reduce(ee.Reducer.mean());
 // APRIL
 var sentinelApril = ee.ImageCollection(sentinelCollection
   .filterBounds(tRegion)
-  .filterDate('2019-04-01', '2019-04-30')
+  .filterDate('2019-04-01', '2019-05-01')
   .select(['B8','B11','B12']))
   .filter(ee.Filter.lte('CLOUDY_PIXEL_PERCENTAGE', 20));
 
@@ -87,7 +89,7 @@ var AprilMean = sentinelApril.reduce(ee.Reducer.mean());
 // MAY
 var sentinelMay = ee.ImageCollection(sentinelCollection
   .filterBounds(tRegion)
-  .filterDate('2019-05-01', '2019-05-31')
+  .filterDate('2019-05-01', '2019-06-01')
   .select(['B8','B11','B12']))
   .filter(ee.Filter.lte('CLOUDY_PIXEL_PERCENTAGE', 20));
 
@@ -96,7 +98,7 @@ var MayMean = sentinelMay.reduce(ee.Reducer.mean());
 // JUNE
 var sentinelJune = ee.ImageCollection(sentinelCollection
   .filterBounds(tRegion)
-  .filterDate('2019-06-01', '2019-06-30')
+  .filterDate('2019-06-01', '2019-07-01')
   .select(['B8','B11','B12']))
   .filter(ee.Filter.lte('CLOUDY_PIXEL_PERCENTAGE', 20));
 
@@ -105,7 +107,7 @@ var JuneMean = sentinelJune.reduce(ee.Reducer.mean());
 // JULY
 var sentinelJuly = ee.ImageCollection(sentinelCollection
   .filterBounds(tRegion)
-  .filterDate('2019-07-01', '2019-07-31')
+  .filterDate('2019-07-01', '2019-08-01')
   .select(['B8','B11','B12']))
   .filter(ee.Filter.lte('CLOUDY_PIXEL_PERCENTAGE', 20));
 
@@ -114,7 +116,7 @@ var JulyMean = sentinelJuly.reduce(ee.Reducer.mean());
 // AUGUST
 var sentinelAugust = ee.ImageCollection(sentinelCollection
   .filterBounds(tRegion)
-  .filterDate('2019-08-01', '2019-08-31')
+  .filterDate('2019-08-01', '2019-09-01')
   .select(['B8','B11','B12']))
   .filter(ee.Filter.lte('CLOUDY_PIXEL_PERCENTAGE', 20));
 
@@ -1398,7 +1400,7 @@ Map.addLayer(ConvolveOR, {bands: ['mean_any'], max: 0.5}, 'convolveOR_NIR');
 
 
 // APPLY CONNECTED COMPONENT AFTER
-/*{ !!This part is under construction!!
+/*{
 var objectId = ConvolveOR.connectedComponents({
   connectedness: ee.Kernel.plus(1),
   maxSize: 256
