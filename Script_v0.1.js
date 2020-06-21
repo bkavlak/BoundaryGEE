@@ -41,7 +41,8 @@ var T = ee.Number(100);  //this is pixel value
 // ConnectedComponents Parameters
 var ec = true;                   //eightConnected
 var CT = ee.Number(200);         //this is m2
-var ConnectedComponents = false; //better leave it false right now
+var ConnectedComponents = false; //if true it applies Connected Component analysis after each directional matrix
+                                 //Lately, turning this to true helps if you decrease above threshold. 
 
 // GET MONTHLY MEAN IMAGES
 {
