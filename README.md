@@ -7,7 +7,7 @@ Any contribution is highly appreciated.
 
 *I'll add the details of the code.*
 
-Click here: [GEE Link](https://code.earthengine.google.com/df74d894e2ca6fa539eee7acf0aed1e4)
+Click here: [GEE Link](https://code.earthengine.google.com/edb00d86ad7dded2391f29a40523a7c4)
 
 Then click ```Run``` to see the preliminary results.
 
