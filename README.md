@@ -15,7 +15,7 @@ Then click ```Run``` to see the preliminary results.
 
 <div align="center"><img src="images/RasterOutput1.png" width="500" height="500" ></div>
 
-## Improvement Areas
+## Customization on Script
 -	By adjusting **T** parameter, you can eliminate some noise (at Line 24)
 -	Connected Component analysis could be improved to eliminate extra lines within the fields.
 -	Rather than taking ‘mean’ of images in each month, you can choose one per month to reduce computational intensity.
